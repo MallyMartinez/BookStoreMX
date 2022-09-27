@@ -9,44 +9,96 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
+        
+        <div class="clear"></div>
         <div class="header">
             <div class="topHeader">
                 <div class="logoPrincipal">
-                    <img class = "logo" src="images/logo BookMX.png">
-                        
-                    
+                    <img src="images/logoI.png"  height="120" />
                 </div>
-
-                <div class="navigation">
-                    <nav> 
-                        <ul>
-                            <li>Principal</li>
-                            <li>Género</li>
-                            <li>Historial</li>
-                            <li>
-                                <form class="searchBox">
-                                    <span> Buscar </span>
-                                    <input type="text" value=""><input type="submit" value="">
+                    <h1 class="h1">Buscar</h1>
+                    <div class="flexsearch">
+                            <div class="flexsearch--wrapper">
+                                <form class="flexsearch--form" action="#" method="post">
+                                    <div class="flexsearch--input-wrapper">
+                                        <input class="flexsearch--input" type="search" placeholder="¿En que libro piensas?">
+                                    </div>
+                                    <input class="flexsearch--submit" type="submit" value="&#10140;"/>
                                 </form>
-                            </li>       
-                         </ul>
-                         
-                    </nav>
-                </div>  
+                            </div>
+                    </div>
+                    <div class="navigation">
+                        <a class="toggleMenu" href="#">Menu</a>
+                          <ul class="nav">
+                              <li>
+                                  <a href="index.html">BookStore</a>
+                              </li>
+                              <li  class="test">
+                                  <a href="#">PAGOS</a>
+                                  <ul>
+                                      <li>
+                                          <a href="#">Cheque</a>
+                                          
+                                      </li>
+                                      <li>
+                                          <a href="#">Tarjeta de credito</a>
+                                          
+                                      </li>
+                                  </ul>
+                              </li>
+                              
+                              
+                              <li>
+                                  <a href="#">LIBROS</a>
+                                  <ul>
+                                      <li>
+                                          <a href="#">Romance</a>
+                                          
+                                      </li>
+                                      <li>
+                                          <a href="#">Drama</a>
+                                          
+                                      </li>
+                                      <li>
+                                          <a href="#">Ficcion</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">Terror</a>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a href="#">ORDENES</a>
+                                  <ul>
+                                      <li>
+                                          <a href="#">Envio a casa</a>
+                                          
+                                      </li>
+                                      <li>
+                                          <a href="#">Recoger en tienda</a>
+                                          
+                                      </li>
+                                      
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a href="contacto.html">CONTACTOS</a>
+                              </li>
+                          </ul>
+  
+                    </div>
             </div>   
 
         </div>
+        
         
         <div class="main"> 
             <section>
                 <article>
                     <h1 class="titulo">Maze Runner</h1>
                     <img id="img_maze"src="images/Maze runner.jpg"/>
-                    <footer class = "precio">$299.00</footer>
-                    
-                        
+                    <footer class = "precio">$299.00</footer>   
                 </article>
-                
                 <article>
                     <h1 class="titulo">Ready Player One</h1>
                     <img id="img_RPO"src="images/RPO.jpg"/>
@@ -56,8 +108,14 @@
         </div>
         
         
-        <footer id="derechos" style = "background: black; color: white;" >Derechos Reservados 2022</footer>
-
+        <footer id="derechos" style = "background: rgb(218, 115, 30); color: white;" >Derechos Reservados 2022</footer>
+    <script type="text/javascript">
+            $(document).ready(function() {			
+                $().UItoTop({ easingType: 'easeOutQuart' });  
+            });
+    </script>
+        <a href="#" id="toTop"> </a>
+    <script type="text/javascript" src="js/navigation.js"></script>
         
     </body>
 </html>
