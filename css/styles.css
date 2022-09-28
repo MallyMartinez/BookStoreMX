@@ -287,3 +287,20 @@ input:-moz-placeholder {
     z-index:200;
     border-top:1px solid #EF7A5D;
 }
+
+#TechoSystems{
+
+    background: rgba(247, 120, 36, 0.0);
+    height: 150px;
+    margin-bottom: 0;
+    border-radius: 70%;
+    
+    
+}
+
+.footerLogo{
+    background: rgba(247, 120, 36, 0.753);
+    height: 105px;
+}
+
+
