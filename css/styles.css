@@ -232,7 +232,7 @@ input:-moz-placeholder {
 }
 .nav a {
     padding:16px 33px;
-    color:#000000;
+    color:#423f3f;
     border-top:1px solid #3871a700;
     -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
