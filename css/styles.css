@@ -1,8 +1,4 @@
 
-*{
-    /*border: 1px solid black;*/
-}
-
 body{
     background-image: url(../images/fondoL.jpg);
     background-size: cover;
@@ -13,6 +9,7 @@ body{
 }
 .main{
     height: 1000px;
+    
 }
 .main footer{
     text-align: center;

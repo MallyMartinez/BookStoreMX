@@ -3,18 +3,22 @@
 }
 .libro1{
     margin: 10px;
-    display: inline-block;
-    float: left;
+    float: right;
     width: auto;
-    padding-right: 100px;
+    padding-right: 60px;
+    padding-left: 50px;
+    background: rgba(255,255,255,.50);
+    border-radius: 20px;
 }
 .espacioTitulo{
     text-align: center;
 }
-
-#img_maze{
+.main{
+    height: 700px;
+}
+#img_maze_compra{
     height: 500px;
-    padding: 5px 5px
+    padding: 20px 20px;
 }
 .espacioLibro{
     display: inline-block;
@@ -28,14 +32,18 @@ section{
 
 .detalles{
     margin: 10px 10px;
+    padding: 20px 20px;
     width:auto;
-    float: left;
+    float: right;
+    background: rgba(255,255,255,.50);
+    border-radius: 20px;
+    height: 420px;
 
 }
 
 @font-face {
     font-family: "tama";
-    src: url(/Fuentes/cube_vol2.TTF);
+    src: url(/Fuentes/01_tama.tff);
 }
 
 @font-face {
@@ -47,17 +55,59 @@ section{
 .precioM{
     font-family: "digital";
     color: white ;
-    /*background: rgba(0,0,255,0.50);*/
     text-align: center;
-    margin: 50px 50px;
+    margin: 30px 20px;
     font-size: 100px;
     border-radius: 100px;
+    padding-bottom: 0;
     -webkit-text-stroke: 100px solid black;
     background: -webkit-linear-gradient(white,yellow);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: tomato;
-    
-
+    color: black;   
 }
 
+.btn_comprar {
+    padding: 15px 25px;
+    font-size: 35px;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background: rgb(255, 251, 0);
+    border: none;
+    -webkit-text-stroke: .6px black;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(0, 0, 0);
+    height: 90px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: verdana;
+    margin-left: 100px;
+  }
+  
+.btn_comprar:hover {background-color: rgb(139, 163, 4);}
+  
+.btn_comprar:active {
+    background-color: rgb(221, 222, 218);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.recomendaciones{
+    background: rgba(247, 120, 36, 0.753);
+    margin: 30px 0;
+    width: 1500px;
+    display: inline-block;
+}
+
+.recomendaciones h1{
+    font-family: verdana;
+}
+
+.librosR div{
+    display: inline-block;
+    width: 100%;
+}
+
+.rec1{width: 150px;}
