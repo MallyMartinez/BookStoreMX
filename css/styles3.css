@@ -1,0 +1,63 @@
+*{
+    border: 1px solid black;
+}
+.libro1{
+    margin: 10px;
+    display: inline-block;
+    float: left;
+    width: auto;
+    padding-right: 100px;
+}
+.espacioTitulo{
+    text-align: center;
+}
+
+#img_maze{
+    height: 500px;
+    padding: 5px 5px
+}
+.espacioLibro{
+    display: inline-block;
+    width: 1200px;
+    clear: both;
+}
+
+section{
+    display: inline-block;
+}
+
+.detalles{
+    margin: 10px 10px;
+    width:auto;
+    float: left;
+
+}
+
+@font-face {
+    font-family: "tama";
+    src: url(/Fuentes/cube_vol2.TTF);
+}
+
+@font-face {
+    font-family: "digital";
+    src: url(/Fuentes/01_Digitall.ttf);
+}
+
+
+.precioM{
+    font-family: "digital";
+    color: white ;
+    /*background: rgba(0,0,255,0.50);*/
+    text-align: center;
+    margin: 50px 50px;
+    font-size: 100px;
+    border-radius: 100px;
+    -webkit-text-stroke: 100px solid black;
+    background: -webkit-linear-gradient(white,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;
+    
+
+}
+
