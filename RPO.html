@@ -107,10 +107,10 @@
                 
                 <div class="detalles">
                     <h2>Título: Ready Player One </h2>
-                    <h2>Autor: James Dashner</h2>
-                    <h2>Páginas: 398</h2>
-                    <h2>Editorial: V&R Editoras</h2>
-                    <h2>Fecha de publicación: Octubre 2009</h2>
+                    <h2>Autor: Ernest Cline</h2>
+                    <h2>Páginas: 476</h2>
+                    <h2>Editorial: Nova</h2>
+                    <h2>Fecha de publicación: 2011</h2>
                     <h2>Pasta: Blanda</h2>
                     <h2 class="precioM">$<number id="precio_compra">300</number></h2>
                     <div href = "#" class="boton">
@@ -126,14 +126,83 @@
 				<div href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></div>
 				<h3>Ya casi es tuyo...</h3>
 				<img id="img_popup" src="">
-				<form action="">
-					<div class="contenedor-inputs">
-						<input type="text" placeholder="Nombre">
-						<input type="email" placeholder="Correo">
-					</div>
-					<input type="submit" class="btn-submit" value="Suscribirse">
-				</form>
-			</div>
+                <div class="contenedor-inputs">
+                    <div class="detallesCompra">
+                        <h3>Título: Ready Player One</h3>
+                        <h3>Autor: Ernest Cline</h3>
+                        <h3>Páginas: 476</h3>
+                        <h3>Editorial: Nova</h3>
+                        <h3>Fecha de publicación: 2011</h3>
+                        <h3>Pasta: Blanda</h3>
+                        <h2>Precio: $<h2 id="precioUnitario">300</h2>
+                    </div>
+                        
+                    <div class="slider">
+                        <label>Selecciona una cantidad (máx unidades: 5)</label>
+                        <input id = "range" type="range" min="1" max="5" value="1"oninput="rangeValue.innerText = this.value">
+                        <number id="rangeValue">1</number>
+                    </div>
+                    <!--div class="btnAplicarCambios">
+                        <button href="#" class="btn-submit" id = "btnAplicarCambios">Aplicar cambios</button>
+                    </div-->
+                    
+                    <div class="btnConfirmaCompra">
+                        <button href="#" class="btn-submit" id = "btnConfirmaCompra">Comprar</button>
+                    </div>
+                    <div class="tCompra">
+                        <h2>Total: $<h2 id="totalCompra">0</h2></h2>
+                    </div>
+                    <h4 id="paqueterias">Paqueterías disponibles:</h4>
+                    <div class=servicioPaq>
+                        <ul class="srv-paq">
+                            <li><img src="images/DHL.png"></li>
+                            <li><img src="images/Fedex.png"></li>
+                            <li><img src="images/ups.png"></li>
+                            <li><img src="images/estafeta.png"></li>
+                        </ul>
+                    </div> 
+                    
+                </div>
+                
+            </div>
+            <!----POP UP 2---->
+            <div class="popup2" id="popup2">
+				<h3>Selecciona tipo de envío</h3>
+				<img id="img_popup" src="">
+                <div class="contenedor-inputs">
+                    <h3 class="infoEnvio">Envío express(menor a 3 días): <h3>$50</h3></h3>
+                    <h3 class="infoEnvio">Envío estándar(7 a 15 días)<h3>$20</h3></h3>
+                    <form action="" class="formulario">
+                        <div class="radio">
+
+                            <input type="radio" name="envio" id="estandar" value="estandar" checked="True">
+                            <label for="estandar">Estándar</label>
+
+                            <input type="radio" name="envio" value="express" id="express">
+                            <label for="express">Express</label>
+                    
+                        </div>
+                    </form>
+                    <div class="totalEnvio">
+                            <h3 class="subS">Subtotal: $<h3 class="subS" id="subTotal">0</h3></h3>
+                            <h1></h1>
+                            <h3 class="envio">Envío: $<h3 class="envio" id="precioEnvio">20</h3></h3>
+                    </div>
+                    <h3>Selecciona forma de pago: </h3>
+                    <form action="" class="formulario2">
+                        <div class="radio2">
+
+                            <input type="radio" name="pago"  value="estandar" checked="True" id="cheque">
+                            <label for="cheque">Cheque</label>
+
+                            <input type="radio" name="pago" value="express" id="tarjeta">
+                            <label for="tarjeta">Tarjeta</label>
+                    
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
 		</div>
 
         <!-----Recomendaciones----->

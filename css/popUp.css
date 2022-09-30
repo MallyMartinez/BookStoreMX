@@ -38,6 +38,7 @@
 	float: right;
 	display: block;
 	text-align: right;
+	cursor: pointer;
 	
 	color: rgb(255, 123, 0);
 }
@@ -77,7 +78,8 @@
 
 .popup .btnConfirmaCompra .btn-submit {
 	padding: 0 20px;
-	height: 40px;
+	float: right;
+	height: 60px;
 	width: 150px;
 	line-height: 40px;
 	border: none;
@@ -87,7 +89,7 @@
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	cursor: pointer;
-	transform:translate(170px,250px);
+	transform:translate(0px,250px);
 	
 }
 
@@ -131,16 +133,22 @@
 }
 
 .tCompra{
-	
+
 	transform:translate(-20px,200px);
 }
 
 .tCompra h2{
+	font-size: 40px;
 	display: inline;
+	background: rgba(255, 115, 0, 0.5);
+	padding: 0px 10px;
+	border-radius: 10px;
+	
 }
 
 #totalCompra
 {
+	
 	transform:translate(-20px,10px);
 }
 
@@ -159,17 +167,9 @@
 	width: 500px;
 	height: 650px;
 	transition: .3s ease all;
-	opacity: 1;
-	transform:translate(-60px,30px) scale(0.7);
+	opacity: 1;transform:translate(-60px,30px) scale(0.3);
 }
 
-
-.popup2 h3 {
-	font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	opacity: 1;
-}
 
 .popup2 h4 {
 	font-size: 26px;
@@ -205,11 +205,213 @@
 	transition: .08s;
   }
 
+.popup2 h3{
+	font-size: 25px;
+}
+.subS{
+	display: inline;
+}
+
+.envio{
+	transform:translate(-60px,130px);
+	display: inline
+}
+
+#paqueterias
+{	
+	transform: translate(20px,40px);
+	font-size: 20px;
+}
+
+.servicioPaq{
+}
+.servicioPaq ul{
+	
+	list-style-type: none;
+}
+
+.servicioPaq .srv-paq li{
+	display: inline-block;
+}
+.servicioPaq .srv-paq img
+{	
+	height: 40px;
+
+}
+
+/*-----------------------------*/
+/* Radio buttons tipo envio*/
+/*-----------------------------*/
+.formulario > div {
+	padding: 20px 0;
+	border-bottom: 1px solid rgb(0, 0, 0); }
+.formulario .radio label {
+	display: inline-block;
+	cursor: pointer;
+	color: #ff6a00;
+	position: relative;
+	padding: 5px 15px 5px 51px;
+	font-size: 1em;
+	border-radius: 5px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease; }
+
+.formulario .radio label:hover {
+	background: rgba(255, 65, 54, 0.1); }
+	
+.formulario .radio label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	left: 15px;
+	border-radius: 50%;
+	background: none;
+	border: 3px solid #ff6a00 }
+.formulario input[type="radio"] {
+	display: none; }
+
+.formulario input[type="radio"]:checked + label:before {
+	display: none; }
+
+.formulario input[type="radio"]:checked + label {
+	padding: 5px 15px;
+	background: #ff6a00;
+	border-radius: 2px;
+	color: #fff; }
+
+.formulario > div {
+	padding: 20px 0;
+	border-bottom: 1px solid rgb(0, 0, 0); }
+.formulario .radio label {
+	display: inline-block;
+	cursor: pointer;
+	color: #ff6a00;
+	position: relative;
+	padding: 5px 15px 5px 51px;
+	font-size: 1em;
+	border-radius: 5px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease; }
+
+.formulario .radio label:hover {
+	background: rgba(255, 65, 54, 0.1); }
+	
+.formulario .radio label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	left: 15px;
+	border-radius: 50%;
+	background: none;
+	border: 3px solid #ff6a00 }
+.formulario input[type="radio"] {
+	display: none; }
+
+.formulario input[type="radio"]:checked + label:before {
+	display: none; }
+
+.formulario input[type="radio"]:checked + label {
+	padding: 5px 15px;
+	background: #ff6a00;
+	border-radius: 2px;
+	color: #fff; }
+
+/*------------------------*/
+/* Radio buttons forma pago*/
+/*------------------------*/
+.formulario2 > div {
+	padding: 20px 0;
+	border-bottom: 1px solid rgb(0, 0, 0); }
+.formulario2 .radio2 label {
+	display: inline-block;
+	cursor: pointer;
+	color: #ff6a00;
+	position: relative;
+	padding: 5px 15px 5px 51px;
+	font-size: 1em;
+	border-radius: 5px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease; }
+
+.formulario2 .radio2 label:hover {
+	background: rgba(255, 65, 54, 0.1); }
+	
+.formulario2 .radio2 label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	left: 15px;
+	border-radius: 50%;
+	background: none;
+	border: 3px solid #ff6a00 }
+.formulario2 input[type="radio"] {
+	display: none; }
+
+.formulario2 input[type="radio"]:checked + label:before {
+	display: none; }
+
+.formulario2 input[type="radio"]:checked + label {
+	padding: 5px 15px;
+	background: #ff6a00;
+	border-radius: 2px;
+	color: #fff; }
+
+.formulario2 > div {
+	padding: 20px 0;
+	border-bottom: 1px solid rgb(0, 0, 0); }
+.formulario2 .radio2 label {
+	display: inline-block;
+	cursor: pointer;
+	color: #ff6a00;
+	position: relative;
+	padding: 5px 15px 5px 51px;
+	font-size: 1em;
+	border-radius: 5px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease; }
+
+.formulario2 .radio2 label:hover {
+	background: rgba(255, 65, 54, 0.1); }
+	
+.formulario2 .radio2 label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	left: 15px;
+	border-radius: 50%;
+	background: none;
+	border: 3px solid #ff6a00 }
+.formulario2 input[type="radio"] {
+	display: none; }
+
+.formulario2 input[type="radio"]:checked + label:before {
+	display: none; }
+
+.formulario2 input[type="radio"]:checked + label {
+	padding: 5px 15px;
+	background: #ff6a00;
+	border-radius: 2px;
+	color: #fff; }
+
+
 
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
 .popup.active {	transform: scale(1); opacity: 1; }
+.popup2.active {transform: translate(-60px,30px) scale(0.7); }
 
 .slider {
 	position:absolute;

@@ -6,11 +6,15 @@ var btnAbrirPopUp = document.getElementById("btn_comprar"),
     totalCompra = document.getElementById("totalCompra"),
     cantidad =document.getElementById("range"),
     btnConfirmaCompra = document.getElementById("btnConfirmaCompra"),
-    btnCambios = document.getElementById("btnAplicarCambios");
+    btnCambios = document.getElementById("btnAplicarCambios"),
+    popup2 = document.getElementById("popup2"),
+    subtotal= document.getElementById("subTotal");
+    costoEnvio = document.getElementById("precioEnvio")
 
 btnAbrirPopUp.addEventListener('click', function(){
     overlay.classList.add('active');
     popup.classList.add('active');
+    popup2.classList.add('active');
     cambiarImagenJS();
     ObtenerTotalCompra();
 });
@@ -18,16 +22,17 @@ btnAbrirPopUp.addEventListener('click', function(){
 btnCerrarPopup.addEventListener('click', function(){
     overlay.classList.remove('active');
     popup.classList.remove('active');
+    popup2.classList.remove('active');
 
 });
 
 btnConfirmaCompra.addEventListener('click', function(){
     
 });
-
+/*
 btnCambios.addEventListener('click',function(){
     ObtenerTotalCompra();
-});
+});*/
    
 
 function cambiarImagenJS(){
@@ -35,7 +40,38 @@ function cambiarImagenJS(){
 }
 
 function ObtenerTotalCompra(){
-    var total = Number(precioCompra.innerHTML)*cantidad.value
+    var sub_total = Number(precioCompra.innerHTML)*cantidad.value
+    var total = (Number(precioCompra.innerHTML)*cantidad.value) + Number(costoEnvio.innerHTML)
     totalCompra.innerHTML = String(total)
+    subtotal.innerHTML = String(sub_total)
 }
+
+var inputs = document.getElementById("estandar")
+inputs.addEventListener('click',function(){
+
+        costoEnvio.innerHTML = 20
+        var sub_total = Number(precioCompra.innerHTML)*cantidad.value
+        var total = (Number(precioCompra.innerHTML)*cantidad.value) + Number(costoEnvio.innerHTML)
+        totalCompra.innerHTML = String(total)
+        subtotal.innerHTML = String(sub_total)
+});
+
+var inputs2 = document.getElementById("express")
+inputs2.addEventListener('click',function(){
+
+        costoEnvio.innerHTML = 50
+        var sub_total = Number(precioCompra.innerHTML)*cantidad.value
+        var total = (Number(precioCompra.innerHTML)*cantidad.value) + Number(costoEnvio.innerHTML)
+        totalCompra.innerHTML = String(total)
+        subtotal.innerHTML = String(sub_total)
+});
+
+cantidad.addEventListener('click', function(){
+        var sub_total = Number(precioCompra.innerHTML)*cantidad.value
+        var total = (Number(precioCompra.innerHTML)*cantidad.value) + Number(costoEnvio.innerHTML)
+        totalCompra.innerHTML = String(total)
+        subtotal.innerHTML = String(sub_total)
+});
+
+  
 

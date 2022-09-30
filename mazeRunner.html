@@ -142,9 +142,9 @@
                         <input id = "range" type="range" min="1" max="5" value="1"oninput="rangeValue.innerText = this.value">
                         <number id="rangeValue">1</number>
                     </div>
-                    <div class="btnAplicarCambios">
+                    <!--div class="btnAplicarCambios">
                         <button href="#" class="btn-submit" id = "btnAplicarCambios">Aplicar cambios</button>
-                    </div>
+                    </div-->
                     
                     <div class="btnConfirmaCompra">
                         <button href="#" class="btn-submit" id = "btnConfirmaCompra">Comprar</button>
@@ -152,7 +152,15 @@
                     <div class="tCompra">
                         <h2>Total: $<h2 id="totalCompra">0</h2></h2>
                     </div>
-                    <h5>*Advertencia: Antes de comprar no olvide aplicar cambios en cantidad y tipo de envío.</h5>
+                    <h4 id="paqueterias">Paqueterías disponibles:</h4>
+                    <div class=servicioPaq>
+                        <ul class="srv-paq">
+                            <li><img src="images/DHL.png"></li>
+                            <li><img src="images/Fedex.png"></li>
+                            <li><img src="images/ups.png"></li>
+                            <li><img src="images/estafeta.png"></li>
+                        </ul>
+                    </div> 
                     
                 </div>
                 
@@ -162,27 +170,34 @@
 				<h3>Selecciona tipo de envío</h3>
 				<img id="img_popup" src="">
                 <div class="contenedor-inputs">
-                    <h3>Envío express(menor a 3 días): <h3>$50</h3></h3>
-                    <h3>Envío estándar(7 a 15 días)<h3>$20</h3></h3>
+                    <h3 class="infoEnvio">Envío express(menor a 3 días): <h3>$50</h3></h3>
+                    <h3 class="infoEnvio">Envío estándar(7 a 15 días)<h3>$20</h3></h3>
                     <form action="" class="formulario">
                         <div class="radio">
-                            <h2>Radio Buttons</h2>
-                            
-                            <input type="radio" name="envio" id="estandar">
+
+                            <input type="radio" name="envio" id="estandar" value="estandar" checked="True">
                             <label for="estandar">Estándar</label>
 
-                            <input type="radio" name="envio" id="hombre">
+                            <input type="radio" name="envio" value="express" id="express">
                             <label for="express">Express</label>
                     
                         </div>
+                    </form>
+                    <div class="totalEnvio">
+                            <h3 class="subS">Subtotal: $<h3 class="subS" id="subTotal">0</h3></h3>
+                            <h1></h1>
+                            <h3 class="envio">Envío: $<h3 class="envio" id="precioEnvio">20</h3></h3>
+                    </div>
+                    <h3>Selecciona forma de pago: </h3>
+                    <form action="" class="formulario2">
+                        <div class="radio2">
+
+                            <input type="radio" name="pago"  value="estandar" checked="True" id="cheque">
+                            <label for="cheque">Cheque</label>
+
+                            <input type="radio" name="pago" value="express" id="tarjeta">
+                            <label for="tarjeta">Tarjeta</label>
                     
-                        <div class="checkbox">
-                            <h2>Checkboxines :D</h2>
-                            <input type="checkbox" name="checkbox" id="checkbox1">
-                            <label for="checkbox1">Checkboxin 1</label>
-                    
-                            <input type="checkbox" name="checkbox2" id="checkbox2">
-                            <label for="checkbox2">Checkboxin 2</label>
                         </div>
                     </form>
                 </div>

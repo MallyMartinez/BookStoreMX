@@ -71,9 +71,8 @@ section{
     text-decoration: none;
     outline: none;
     color: #fff;
-    background: rgb(255, 251, 0);
+    background:#ff6a00;
     border: none;
-    -webkit-text-stroke: .6px black;
     border-radius: 15px;
     box-shadow: 0 9px rgb(0, 0, 0);
     height: 90px;
@@ -82,10 +81,11 @@ section{
     text-align: center;
     font-family: verdana;
     margin-left: 100px;
-    transition: .1s ease all;
+    transition: .2s ease all;
+    cursor: pointer;
   }
   
-.btn_comprar:hover {background-color: rgb(139, 163, 4);}
+.btn_comprar:hover {background-color: rgb(113, 77, 0);}
   
 .btn_comprar:active {
     background-color: rgb(221, 222, 218);
