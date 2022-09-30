@@ -1,6 +1,4 @@
-*{
-    border: 1px solid black;
-}
+
 .libro1{
     margin: 10px;
     float: right;
@@ -16,7 +14,7 @@
 .main{
     height: 700px;
 }
-#img_maze_compra{
+#img_compra{
     height: 500px;
     padding: 20px 20px;
 }
@@ -84,6 +82,7 @@ section{
     text-align: center;
     font-family: verdana;
     margin-left: 100px;
+    transition: .1s ease all;
   }
   
 .btn_comprar:hover {background-color: rgb(139, 163, 4);}
@@ -111,3 +110,4 @@ section{
 }
 
 .rec1{width: 150px;}
+
