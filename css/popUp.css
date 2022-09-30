@@ -1,3 +1,4 @@
+
 .overlay {
 	background: rgba(0,0,0,.5);
 	position: fixed;
@@ -74,9 +75,10 @@
 	border: 1px solid #BBBBBB;
 }
 
-.popup form .btn-submit {
+.popup .btnConfirmaCompra .btn-submit {
 	padding: 0 20px;
 	height: 40px;
+	width: 150px;
 	line-height: 40px;
 	border: none;
 	color: #fff;
@@ -85,13 +87,20 @@
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	cursor: pointer;
+	transform:translate(170px,250px);
 	
 }
 
-.popup form .btn-submit:hover {
+.popup .btnConfirmaCompra .btn-submit:hover {
 	background: rgba(100, 20, 0, 0.9);
 	transition: .3s;
 }
+
+.popup .btnConfirmaCompra .btn-submit:active {
+    background-color: rgb(221, 222, 218);
+    box-shadow: 0 5px #666;
+	transition: .08s;
+  }
 
 #img_popup{
     height: 250px;
@@ -108,6 +117,93 @@
 	margin-left: 20px;
 	margin-right: 20px;
 }
+.detallesCompra h2{
+	margin-left: 0;
+	width: 100px;
+	display: inline;
+	
+}
+.detallesCompra h2{
+	margin-left: 0;
+	width: 100px;
+	display: inline;
+	
+}
+
+.tCompra{
+	
+	transform:translate(-20px,200px);
+}
+
+.tCompra h2{
+	display: inline;
+}
+
+#totalCompra
+{
+	transform:translate(-20px,10px);
+}
+
+.contenedor-inputs h5{
+	color: red;
+	transform:translate(-10px,120px);
+}
+
+.popup2 {
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 500px;
+	height: 650px;
+	transition: .3s ease all;
+	opacity: 1;
+	transform:translate(-60px,30px) scale(0.7);
+}
+
+
+.popup2 h3 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+
+.popup2 h4 {
+	font-size: 26px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	opacity: 1;
+}
+
+.popup .btnAplicarCambios .btn-submit {
+	padding: 0 20px;
+	height: 40px;
+	width: 200px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #ff6a00;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transform:translate(-60px,130px);
+	
+}
+
+.popup .btnAplicarCambios .btn-submit:hover {
+	background: rgba(100, 20, 0, 0.9);
+	transition: .3s;
+}
+
+.popup .btnAplicarCambios .btn-submit:active {
+    background-color: rgb(221, 222, 218);
+    box-shadow: 0 5px #666;
+	transition: .08s;
+  }
 
 
 /* ------------------------- */
@@ -129,8 +225,6 @@
 	display:flex;
 	align-items:center;
 	border: none;
-	
-	
    }
    .slider number{
 	font-size:26px;

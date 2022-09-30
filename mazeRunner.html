@@ -134,21 +134,60 @@
                         <h3>Editorial: V&R Editoras</h3>
                         <h3>Fecha de publicación: Octubre 2009</h3>
                         <h3>Pasta: Blanda</h3>
+                        <h2>Precio: $<h2 id="precioUnitario">299</h2>
                     </div>
-                    
-                    
+                        
                     <div class="slider">
                         <label>Selecciona una cantidad (máx unidades: 5)</label>
-                        <input type="range" min="1" max="5" value="0"oninput="rangeValue.innerText = this.value">
+                        <input id = "range" type="range" min="1" max="5" value="1"oninput="rangeValue.innerText = this.value">
                         <number id="rangeValue">1</number>
                     </div>
+                    <div class="btnAplicarCambios">
+                        <button href="#" class="btn-submit" id = "btnAplicarCambios">Aplicar cambios</button>
+                    </div>
+                    
+                    <div class="btnConfirmaCompra">
+                        <button href="#" class="btn-submit" id = "btnConfirmaCompra">Comprar</button>
+                    </div>
+                    <div class="tCompra">
+                        <h2>Total: $<h2 id="totalCompra">0</h2></h2>
+                    </div>
+                    <h5>*Advertencia: Antes de comprar no olvide aplicar cambios en cantidad y tipo de envío.</h5>
                     
                 </div>
                 
             </div>
-            
+            <!----POP UP 2---->
+            <div class="popup2" id="popup2">
+				<h3>Selecciona tipo de envío</h3>
+				<img id="img_popup" src="">
+                <div class="contenedor-inputs">
+                    <h3>Envío express(menor a 3 días): <h3>$50</h3></h3>
+                    <h3>Envío estándar(7 a 15 días)<h3>$20</h3></h3>
+                    <form action="" class="formulario">
+                        <div class="radio">
+                            <h2>Radio Buttons</h2>
+                            
+                            <input type="radio" name="envio" id="estandar">
+                            <label for="estandar">Estándar</label>
+
+                            <input type="radio" name="envio" id="hombre">
+                            <label for="express">Express</label>
                     
-			</div>
+                        </div>
+                    
+                        <div class="checkbox">
+                            <h2>Checkboxines :D</h2>
+                            <input type="checkbox" name="checkbox" id="checkbox1">
+                            <label for="checkbox1">Checkboxin 1</label>
+                    
+                            <input type="checkbox" name="checkbox2" id="checkbox2">
+                            <label for="checkbox2">Checkboxin 2</label>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
 		</div>
 
         <!-----Recomendaciones----->
