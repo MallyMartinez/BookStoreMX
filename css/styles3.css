@@ -12,6 +12,7 @@
     text-align: center;
 }
 .main{
+
     height: 700px;
 }
 #img_compra{
@@ -25,7 +26,7 @@
 }
 
 section{
-    display: inline-block;
+    display: block;
 }
 
 .detalles{
@@ -97,12 +98,37 @@ section{
     background: rgba(247, 120, 36, 0.753);
     margin: 30px 0;
     width: 1500px;
-    display: inline-block;
+    height: 500px;
 }
 
 .recomendaciones h1{
+
     font-family: verdana;
+
 }
+
+.recomendaciones .librosRec{
+    border-radius: 10px;
+    background: rgba(255,255,255,.50);
+    margin: 10px;
+    width: fit-content;
+}
+.recomendaciones .librosRec div{
+    display: inline-block;
+    margin-right: 0;
+}
+.recomendaciones .librosRec h1, footer{
+    font-size: 20px;
+    font-family: verdana;
+    width: 300px;
+    text-align: center;
+}
+
+.recomendaciones .librosRec a{
+    margin-left: 50px;
+    align-content: center;
+}
+
 
 .librosR div{
     display: inline-block;
@@ -110,4 +136,10 @@ section{
 }
 
 .rec1{width: 150px;}
+
+.footerPage footer{
+    font-size: 15px;
+    width: auto;
+
+}
 

@@ -20,7 +20,7 @@ body{
     padding-right: 30px;
     
 }
-#img_RPO{
+#image{
     height: 200px;
     margin-left: 25px;
     
@@ -80,7 +80,16 @@ header,nav,div,section{
 }
 .main article{
     display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 0;
 }
+
+.main .cajaLibros article h1{
+    width: 200px;
+}
+
+
 
 .flexsearch--wrapper {
 	height: auto;
