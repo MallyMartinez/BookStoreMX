@@ -13,7 +13,7 @@
 }
 .main{
 
-    height: 700px;
+    height: (auto + 10px);
 }
 #img_compra{
     height: 500px;
@@ -143,3 +143,43 @@ section{
 
 }
 
+/*--------------------------*/
+/*          ORDENES         */
+/*--------------------------*/
+
+.espacioOrdenes .Ordenes
+{
+    width: auto;
+    height: 350px;
+    background: rgba(255,255,255,.50);
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.espacioOrdenes div h2{
+    padding: 10px;
+}
+
+.btnDetalles{
+	height: 40px;
+	width: 100px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #ff6a00;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+    margin-left: 50px;
+}
+
+.btnDetalles:hover {
+	background: rgba(100, 20, 0, 0.9);
+	transition: .3s;
+}
+
+.btnDetalles:active {
+    background-color: rgb(221, 222, 218);
+	transition: .08s;
+}
