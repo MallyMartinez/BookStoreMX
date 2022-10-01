@@ -13,7 +13,7 @@
 }
 .main{
 
-    height: (auto + 10px);
+    height: auto;
 }
 #img_compra{
     height: 500px;

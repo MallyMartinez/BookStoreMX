@@ -8,11 +8,20 @@ body{
     
 }
 .main{
-    height: 1400px;
+    height: auto;
+    padding-bottom: 10px;
     
 }
 .main footer{
     text-align: center;
+}
+
+.flecha{
+    width: 100px;
+}
+
+.main .cajaLibros article a{
+    padding-right: 20px;
 }
 #img_maze{
     height: 200px;
@@ -299,4 +308,21 @@ input:-moz-placeholder {
     height: 80px;
     margin-bottom: 0;
     border-radius: 90%;
+}
+
+/*--------------*/
+/*  CATEGORIAS  */
+/*--------------*/
+.categorias .genero{
+    background: rgba(255,255,255,.50);
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+}
+
+.main .categorias article a{
+    padding-right: 20px;
+}
+
+.main .categorias article h1{
+    width: 200px;
 }

@@ -145,11 +145,15 @@
 	border-radius: 10px;
 	
 }
-
+.total
+{
+	margin-left: 150px;
+}
 #totalCompra
 {
 	
-	transform:translate(-20px,10px);
+	transform:translate(-10px,10px);
+	
 }
 
 .contenedor-inputs h5{
