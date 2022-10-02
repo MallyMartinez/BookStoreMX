@@ -394,3 +394,63 @@ input:-moz-placeholder {
     font-family: 'Monserrat', sans-serif; 
     color: rgba(0, 0, 0, 0.7);
 }
+
+table{
+	background-color: #b17db6;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: #632453;
+	border-bottom: solid 5px #360f31;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: rgb(153, 120, 156);
+}
+
+tr:hover td{
+	background-color: #ad4ea9;
+	color: rgb(0, 0, 0);
+}
+
+.productos-box{
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.productos-box h1 {
+  margin: 0;
+  padding: 0 0 5px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.productos-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #f28500;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.productos-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
