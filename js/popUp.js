@@ -8,8 +8,12 @@ var btnAbrirPopUp = document.getElementById("btn_comprar"),
     btnConfirmaCompra = document.getElementById("btnConfirmaCompra"),
     btnCambios = document.getElementById("btnAplicarCambios"),
     popup2 = document.getElementById("popup2"),
-    subtotal= document.getElementById("subTotal");
-    costoEnvio = document.getElementById("precioEnvio")
+    subtotal= document.getElementById("subTotal"),
+    costoEnvio = document.getElementById("precioEnvio"),
+    btnConfirmaCompra = document.getElementById("btnConfirmaCompra"),
+    popup3 = document.getElementById("popup3"),
+    overlay2 = document.getElementById("overlay2"),
+    btnAceptar = document.getElementById("aceptar")
 
 btnAbrirPopUp.addEventListener('click', function(){
     overlay.classList.add('active');
@@ -27,12 +31,17 @@ btnCerrarPopup.addEventListener('click', function(){
 });
 
 btnConfirmaCompra.addEventListener('click', function(){
-    
+    overlay.classList.remove('active');
+    popup.classList.remove('active');
+    popup2.classList.remove('active');
+    overlay2.classList.add('active');
+    popup3.classList.add('active')
 });
-/*
-btnCambios.addEventListener('click',function(){
-    ObtenerTotalCompra();
-});*/
+
+btnAceptar.addEventListener('click', function(){
+    overlay2.classList.remove('active');
+    popup3.classList.remove('active')
+});
    
 
 function cambiarImagenJS(){
@@ -73,5 +82,11 @@ cantidad.addEventListener('click', function(){
         subtotal.innerHTML = String(sub_total)
 });
 
-  
+
+btnComprarPopup.addEventListener('click', function(){
+    overlay.classList.remove('active');
+    popup.classList.remove('active');
+    popup2.classList.remove('active');
+
+});
 
