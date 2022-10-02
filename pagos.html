@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Techno Systems">
+        <title>BookStore MX</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylessheet" href="css/styles3.css">
+        <link rel="icon" href="images/logoB (2).png">
+    </head>
+    <body>
+        <div class="header">
+            <div class="wrap">
+            <div class="header_top">
+                <div class="logo">
+                    <a href="index.html">
+                       <center> <img src="images/logoI.png" alt="" /></center></a>
+                </div>
+               <h1 class="h1"> Buscar</h1><center>
+                <div class="flexsearch">
+                        <div class="flexsearch--wrapper">
+                            <form class="flexsearch--form" action="#" method="post">
+                                <div class="flexsearch--input-wrapper">
+                                    <input class="flexsearch--input" type="search" placeholder="¿En que libro piensas?">
+                                </div>
+                                <input class="flexsearch--submit" type="submit" value="&#10140;"/>
+                            </form>
+                        </div></center>
+                </div> 
+                    <div class="navigation">
+                        <a class="toggleMenu" href="#">Menu</a>
+                          <ul class="nav">
+                              <li>
+                                  <a href="index.html">Inicio</a>
+                              </li>
+                              <li  class="test">
+                                  <a href="#">Pagos</a>
+                                  <ul>
+                                      <li>
+                                          <a href="#">Cheque</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">Tarjeta de credito</a>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a href="categorias.html">Categorias</a>
+                                  <ul>
+                                      <li>
+                                          <a href="#">Romance</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">Drama</a>   
+                                      </li>
+                                      <li>
+                                          <a href="#">Ficcion</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">Terror</a>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a href="ordenes.html">Compras</a>
+                                  <ul>
+                                      <li>
+                                          <a href="#">Envio a casa</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">Recoger en tienda</a>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a href="Somos.html">Nosotros</a>
+                              </li>
+                              <li>
+                                <a href="contacto.html">contactos</a>
+                            </li>
+                            <li>
+                                <a href="cuenta.html">Mi cuenta</a>
+                            </li>
+                            <li>
+                                <a href="notificacion.html">Notificaciones</a>
+                            </li>
+                          </ul>
+                    </div>
+            </div>   
+        </div>
+        
+        <div class="main">
+            <h1 style="font-family: 'Montserrat', sans-serif; text-align: center;">Pagos</h1>
+            <h2 style="font-family: 'Montserrat', sans-serif; text-align: center; color:aqua;">
+                Aquí puedes ver tus formas de pago agregadas y los pagos realizados.
+            </h2>
+            <section class="formaPago" style="padding: 30px;">
+                
+                <h2 style="color: blueviolet; text-align:center; font-family: 'Roboto', sans-serif; background: rgba(255,255,255,.50);
+                    width: 300px; border-radius: 10px;">
+                    Tarjetas de crédito/débito<img style="height: 70px" src="images/tarjeta.png"/>
+                </h2>
+                <div class="tarjetaCD" style="background: rgba(255,255,255,.50); margin: 10px; border-radius: 20px;">
+                    <button class="agregarTrj">+</button>
+                    <article  style="border: 10px outset orange; margin: 20px; border-radius: 10px;">
+                        <h1 class="titulo" style="color: blue">Tarjeta 1</h1>
+                        
+                        <img style="height: 150px" src="images/tarjeta2.png"/>
+                        <div class="clear"></div>
+                        <h3 class="infoTrj">Banco: Santander</h3>
+                        <h3 class="infoTrj">No. **** **** **** 8969</h3>
+                        <h3 class="infoTrj">Fecha de vencimiento: 03/2026</h3>
+                        <img style="height: 50px;"id="image"src="images/Santander.png"/> 
+                        <img style="height: 50px;"id="image"src="images/visa.png"/>
+                         
+                    </article>
+                </div>
+            </section>
+
+            <section  class="formaPago" style="padding: 30px;">
+                
+                <h2 style="color: blueviolet; text-align:center; font-family: 'Roboto', sans-serif; background: rgba(255,255,255,.50);
+                    width: 300px; border-radius: 10px;">
+                    Pago con Cheque
+                    <div class="clear"></div>
+                    <img style="height: 70px;" src="images/Cheque.png"/>
+                </h2>
+                <div class="tarjetaCD" style="background: rgba(255,255,255,.50); margin: 10px; border-radius: 20px;">
+                    <button class="agregarTrj">+</button>
+                    <article  style="border: 10px outset orange; margin: 20px; border-radius: 10px;">
+                        <h1 class="titulo" style="color: red">No hay registros</h1>
+                        
+                        
+                        <div class="clear"></div>
+                        
+                         
+                    </article>
+                </div>
+            </section>
+            <section class="formaPago" id="pagosRealizados">
+                <h2 style="color: blueviolet; text-align:center; font-family: 'Roboto', sans-serif; background: rgba(255,255,255,.50);
+                width: 300px; border-radius: 10px;">
+                Pagos realizados
+                <div class="clear"></div>
+                <img style="height: 70px;" src="images/dinero.png"/>
+                
+                </h2>
+                <div class="tarjetaCD" id="contenedorDePagos" style="background: rgba(255,255,255,.50); margin: 10px; border-radius: 20px;">
+                    
+                    <article class="pagoR" style="border: 10px outset orange; margin: 20px; border-radius: 10px;">
+                        <h1 class="titulo" style="color: blue">Compra: Maze Runner. Correr o Morir</h1>
+                        <h3>Forma de pago: Tarjeta de crédito/débito</h3>
+                        <h3>Realizado con: </h3>
+                        <h3 class="infoTrj">No. **** **** **** 8969</h3>
+                        <img style="height: 30px;"id="image"src="images/Santander.png"/> 
+                        <img style="height: 30px;"id="image"src="images/visa.png"/>
+                        <h3>Importe: $349 ($50 envío)</h3>
+                        
+                        
+                         
+                    </article>
+                    <article  class="pagoR" style="border: 10px outset orange; margin: 20px; border-radius: 10px;">
+                        <h1 class="titulo" style="color: blue">Compra: Maze Runner.La Cura mortal</h1>
+                        <h3 style="font-family: 'Monserrat', sans-serif; color: black">Forma de pago: Tarjeta de crédito/débito</h3>
+                        <h3>Realizado con: </h3>
+                        <h3 class="infoTrj">No. **** **** **** 8969</h3>
+                        <img style="height: 30px;"id="image"src="images/Santander.png"/> 
+                        <img style="height: 30px;"id="image"src="images/visa.png"/>
+                        <h3>Importe: $349 ($50 envío)</h3>
+                        
+                        
+                         
+                    </article>
+                    <article class="pagoR" style="border: 10px outset orange; margin: 20px; border-radius: 10px;">
+                        
+                        <h1 class="titulo" style="color: blue">Compra: Maze Runner. Prueba de Fuego</h1>
+                        <h3 style="font-family: 'Monserrat', sans-serif; color: black">Forma de pago: Tarjeta de crédito/débito</h3>
+                        <h3>Realizado con: </h3>
+                        <h3 class="infoTrj">No. **** **** **** 8969</h3>
+                        <img style="height: 30px;"id="image"src="images/Santander.png"/> 
+                        <img style="height: 30px;"id="image"src="images/visa.png"/>
+                        <h3>Importe: $350 ($50 envío)</h3>
+                        
+
+                        
+                         
+                    </article>
+                </div>
+            </section>
+        
+        </div>
+
+        
+        
+        <footer id="derechos" style = "color: white;" >
+            <div class = "footerLogo"><image id = "TechoSystems" src = "images/logoEmpFooter.png" height="140"></image></div>
+            <div style = "background: rgba(247, 120, 36); ">© Derechos Reservados 2022</div>
+        </footer>
+        
+    <script type="text/javascript">
+            $(document).ready(function() {			
+                $().UItoTop({ easingType: 'easeOutQuart' });  
+            });
+    </script>
+        <a href="#" id="toTop"> </a>
+    <script type="text/javascript" src="js/navigation.js"></script>
+        
+    </body>
+</html>

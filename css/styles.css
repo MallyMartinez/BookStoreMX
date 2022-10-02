@@ -326,3 +326,71 @@ input:-moz-placeholder {
 .main .categorias article h1{
     width: 200px;
 }
+
+/*----------------*/
+/*  PAGOS         */
+/*----------------*/
+
+.infoTrj{
+    font-family: 'Monserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.agregarTrj{
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    border: none;
+	color: #fff;
+	background: #ff6a00;
+	border-radius: 50px;
+    font-size: 50px;
+    border: 4px dotted white;
+
+}
+
+.agregarTrj:hover {
+	background: rgba(100, 20, 0, 0.9);
+	transition: .3s;
+}
+
+.agregarTrj:active {
+    background-color: rgb(221, 222, 218);
+	transition: .08s;
+}
+
+.main .formaPago{
+   display: inline;
+}
+.main .formaPago h2{
+    margin-left: 20px;
+ }
+
+
+.formaPago{
+    width: 300px;
+    height: 300px;
+}
+
+.formaPago .tarjetaCD{
+    width: 350px;
+    height: auto;
+}
+
+#pagosRealizados{
+    width: 400px;
+    height: auto;
+    float: left;
+    transform: translate(400px,-1120px);
+}
+
+#pagosRealizados #contenedorDePagos{
+    width: 1000px;
+}
+
+#pagosRealizados #contenedorDePagos h3{
+    font-family: 'Monserrat', sans-serif; 
+    color: rgba(0, 0, 0, 0.7);
+}
